@@ -1,0 +1,24 @@
+Le resultat de la commande precedente etant :
+
+traceroute: Warning: slash16.org has multiple addresses; using 13.225.30.145
+traceroute to slash16.org (13.225.30.145), 64 hops max, 52 byte packets
+ 1  10.13.254.254 (10.13.254.254)  0.932 ms  0.404 ms  0.405 ms
+ 2  nat-1 (10.60.1.11)  0.147 ms  0.201 ms  0.186 ms
+ 3  dc3 (62.210.35.1)  1.654 ms  1.829 ms  1.587 ms
+ 4  195.154.1.174 (195.154.1.174)  1.829 ms  1.591 ms  1.115 ms
+ 5  a9k2-45x-s44-2.dc3.poneytelecom.eu (195.154.1.106)  1.125 ms  1.061 ms  1.097 ms
+ 6  amazon-th2.par.franceix.net (37.49.236.118)  1.033 ms  1.022 ms  1.024 ms
+ 7  52.93.16.84 (52.93.16.84)  2.123 ms
+    52.93.16.36 (52.93.16.36)  2.139 ms  2.228 ms
+ 8  52.93.16.177 (52.93.16.177)  1.341 ms
+    52.93.16.185 (52.93.16.185)  1.285 ms
+    52.93.16.179 (52.93.16.179)  1.224 ms
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  server-13-225-30-145.cdg3.r.cloudfront.net (13.225.30.145)  1.348 ms  1.473 ms  1.342 ms
+
+Apres quelques recherches , j'ai trouve que le nom et l’IP du matériel qui fait le lien entre vous (réseau local) et l’extérieur est :
+-> nat-1 (10.60.1.11)

@@ -1,0 +1,7 @@
+On cherche l'ip du serveur slash16.org grace a nslookup.
+
+On lance la commande whois avec l'ip du serveur.
+
+En lisant le résultat a la ligne OrgName on trouve:
+Amazon Technologies Inc.
+Qui est l'hebergeur du site.

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+nombre=0
+nbtentative=0
+RANDOM=$(date +%s)
+aleatoire=$(( RANDOM % 100 ))
+
+echo "J'ai choisis un nombre aléatoire entre 0 et 100 !"
+while [ $nombre -ne $aleatoire ] ; do
+	echo "Devinez le nombre?" ; read nombre
+	if [ "$nombre" -lt $aleatoire ] ; then
+		echo "...C'est plus grand !"
+	elif [ "$nombre" -gt $aleatoire ] ; then
+		echo "...C'est plus petit!"
+	fi
+	nbtentative=$(( $nbtentative + 1 ))
+done
+echo "Bravo!! Vous avez deviné $aleatoire en $nbtentative coups."
+exit 0

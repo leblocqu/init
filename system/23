@@ -1,0 +1,2 @@
+Graphical way: Put login and passwd when asked.
+SSH Way: ssh <user_name>@<ip> with passwd.

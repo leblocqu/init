@@ -1,0 +1,4 @@
+En tapant la commande dig 42.fr, à la ligne ANSWER QUESTION:
+On retrouve bien l'IP, soit:
+163.172.250.12
+163.172.250.13
